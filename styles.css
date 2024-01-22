@@ -26,14 +26,13 @@ body {
     color: white;
     border-radius: 1em;
     text-decoration: none;
-    padding: .1em 1em;
+    padding: .3em 1em;
     transition: .1s;
 }
 
 .header nav span a:hover {
     color: black;
     background-color: #64D0FE;
-    /* border-color: #64D0FE; */
 }
 
 #home {
