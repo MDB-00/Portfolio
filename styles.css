@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.header {
+    background-color: black;
+    padding: 2em;
+    height: 2em;
+    position: sticky;
+    font-size: 1.6em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.header nav {
+    float: right;
+    margin-right: 5em;
+}
+
+.header nav span {
+    padding: .5em;
+}
+
+.header nav span a {
+    border: .1em solid white;
+    color: white;
+    border-radius: 1em;
+    text-decoration: none;
+    padding: .1em 1em;
+    transition: .1s;
+}
+
+.header nav span a:hover {
+    color: black;
+    background-color: #64D0FE;
+    /* border-color: #64D0FE; */
+}
+
+#home {
+    margin-left: 6em;
+}
+
+#home h1 {
+    color: #64D0FE;
+    font-size: 5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-stroke: .02em white;
+    margin-top: 1.5em;
+}
+
+#home p {
+    color: white;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -1em;
+}
