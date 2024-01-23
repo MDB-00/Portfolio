@@ -1,14 +1,24 @@
 body {
     background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin: -90px 0 0;;
 }
 
 .header {
     background-color: black;
     padding: 2em;
     height: 2em;
-    position: sticky;
-    font-size: 1.5em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
@@ -27,7 +37,7 @@ body {
     border-radius: 1em;
     text-decoration: none;
     padding: .3em 1em;
-    transition: .1s;
+    transition: .2s;
 }
 
 .header nav span a:hover {
@@ -36,22 +46,20 @@ body {
 }
 
 #home {
-    margin-left: 6em;
-    line-height: 1.8em;
+    margin-top: 20em;
+    margin-left: 10em;
+    line-height: 2em;
 }
 
 #home h1 {
     color: #64D0FE;
-    font-size: 8em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6em;
     -webkit-text-stroke: .02em white;
-    margin-top: 1.5em;
 }
 
 #home p {
     color: white;
-    font-size: 4em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -59,15 +67,35 @@ body {
     border: .1em solid #64D0FE;
     border-radius: 1em;
     color: #64D0FE;
-    font-size: 1.7em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.35em;
     font-weight: bold;
     text-decoration: none;
     padding: .3em 1em;
+    transition: .2s;
 }
 
 #home a:hover {
     color: black;
     background-color: #64D0FE;
     border-color: white;
+}
+
+#about {
+    margin-top: 15em;
+    margin-right: 10em;
+    margin-left: 10em;
+    line-height: 2.5em;
+}
+
+.heading_text {
+    color: #64D0FE;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#about p {
+    color: white;
+    text-align: left;
+    font-size: 1.5em;
 }
