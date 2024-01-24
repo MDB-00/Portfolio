@@ -1,25 +1,42 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 1em solid #64D0FE;
 }
 
 :target::before {
     content: "";
     display: block;
     height: 90px;
-    margin: -90px 0 0;;
+    margin: -90px 0 0;
 }
 
 .header {
     background-color: black;
     padding: 2em;
     height: 2em;
-    width: 100%;
+    width: 92.65%;
     position: fixed;
     top: 0;
     z-index: 100;
     font-size: 1.25em;
     font-weight: bold;
+}
+
+.header p {
+    display: inline;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1em;
+    letter-spacing: .02em;
 }
 
 .header nav {
@@ -80,22 +97,60 @@ body {
     border-color: white;
 }
 
+
 #about {
     margin-top: 15em;
-    margin-right: 10em;
-    margin-left: 10em;
+    /* margin-right: 10em;
+    margin-left: 10em; */
     line-height: 2.5em;
 }
 
-.heading_text {
+#about-separator {
+    border-top: 3px solid white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.heading-text {
     color: #64D0FE;
     text-align: center;
     font-size: 5em;
     font-weight: bold;
+    -webkit-text-stroke: .02em white;
 }
 
-#about p {
+#about-text {
     color: white;
     text-align: left;
     font-size: 1.5em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#skills {
+    margin-top: 10em;
+}
+
+#skills-separator {
+    border-top: 3px solid white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.containers {
+    /* display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 2em; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    background: lightblue;
+    grid-gap: 2em;
+}
+
+.box {
+    grid-column: 5;
+    grid-row: 5;
 }
