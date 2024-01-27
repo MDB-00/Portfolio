@@ -3,6 +3,9 @@ html {
     margin: 0;
     padding: 0;
 }
+/* *{
+    outline: .5px red dashed;;
+} */
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -111,8 +114,6 @@ body {
 
 #about-section {
     margin-top: 15em;
-    /* margin-right: 10em;
-    margin-left: 10em; */
     line-height: 2.5em;
 }
 
@@ -156,15 +157,16 @@ body {
 }
 
 .center{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
 }
 
 .box {
     background-color: #64D0FE;
-    display: inline-block;
     width: 10em;
     height: 10em;
-    margin: 0px 10px 30px 20px;
     border: none;
     border-radius: 2em;
 }
@@ -178,10 +180,6 @@ body {
 /* Makes logos that are too big smaller */
 .smaller-logo {
     width: 4.3em !important;
-}
-
-.csharp-logo {
-    width: 10em;
 }
 
 .box p{
@@ -203,11 +201,9 @@ body {
 
 .card {
     background-color: black;
-    display: inline-block;
     border: 1em double #64D0FE;
     width: 22em;
     height: 28em;
-    margin: 0px 10px 30px 20px;
     padding: .5em;
 }
 
@@ -230,6 +226,10 @@ body {
     color: white;
     font-size: 1em;
     margin-bottom: 2em;
+}
+
+.center-project-buttons {
+    text-align: center;
 }
 
 .project-button {
