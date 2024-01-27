@@ -9,7 +9,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    border: 1em solid #64D0FE;
+    border: 3em solid #64D0FE;
 }
 
 :target::before {
@@ -23,7 +23,7 @@ body {
     background-color: black;
     padding: 2em;
     height: 2em;
-    width: 92.65%;
+    width: 88.4%;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -49,17 +49,17 @@ body {
 }
 
 .header nav span a {
-    border: .1em solid white;
     color: white;
-    border-radius: 1em;
     text-decoration: none;
-    padding: .3em 1em;
+    padding: .5em 1em;
     transition: .2s;
 }
 
 .header nav span a:hover {
     color: black;
     background-color: #64D0FE;
+    border: none;
+    border-radius: .5em;
 }
 
 #home {
@@ -70,13 +70,13 @@ body {
 
 #home h1 {
     color: #64D0FE;
-    font-size: 6em;
+    font-size: 8em;
     -webkit-text-stroke: .02em white;
 }
 
 #home p {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
 }
 
@@ -98,14 +98,14 @@ body {
 }
 
 
-#about {
+#about-section {
     margin-top: 15em;
     /* margin-right: 10em;
     margin-left: 10em; */
     line-height: 2.5em;
 }
 
-#about-separator {
+.separator {
     border-top: 3px solid white;
     margin-left: 5em;
     margin-right: 5em;
@@ -116,10 +116,10 @@ body {
     text-align: center;
     font-size: 5em;
     font-weight: bold;
-    -webkit-text-stroke: .02em white;
+    -webkit-text-stroke: .03em white;
 }
 
-#about-text {
+.body-text {
     color: white;
     text-align: left;
     font-size: 1.5em;
@@ -127,30 +127,112 @@ body {
     margin-right: 6em;
 }
 
-#skills {
+#skills-section {
     margin-top: 10em;
+    text-align: center;
 }
 
-#skills-separator {
+#skills-section h2 {
+    margin-bottom: .5em;
+}
+
+#skills-section p {
+    text-align: center;
+}
+
+/* #skills-separator {
     border-top: 3px solid white;
     margin-left: 5em;
     margin-right: 5em;
+} */
+
+.container {
+    margin-top: 3em;
 }
 
-.containers {
-    /* display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-auto-rows: minmax(100px, auto);
-    column-gap: 2em; */
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    place-items: center;
-    background: lightblue;
-    grid-gap: 2em;
+.center{
+    text-align: center;
 }
 
 .box {
-    grid-column: 5;
-    grid-row: 5;
+    background-color: #64D0FE;
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    margin: 0px 10px 30px 20px;
+    border: none;
+    border-radius: 2em;
+}
+
+.box img{
+    width: 5em;
+    margin-top: 1em;
+}
+
+.box.smaller-logo {
+    width: 10em;
+}
+
+.box p{
+    margin-top: .5em;
+    font-size: 1.25em;
+}
+
+#projects-section {
+    margin-top: 10em;
+}
+
+#projects-section h2 {
+    margin-bottom: .2em;
+}
+
+#projects-section p {
+    text-align: center;
+}
+
+.card {
+    background-color: black;
+    display: inline-block;
+    border: 1em double #64D0FE;
+    width: 22em;
+    height: 28em;
+    margin: 0px 10px 30px 20px;
+}
+
+.card img {
+    width: 22em;
+}
+
+.project-heading {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.project-tag {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.project-description {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.project-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border: .1em solid white;
+    border-radius: 1em;
+    padding: .6em;
+}
+
+.project-button:hover {
+    color: black;
+    border-color: #64D0FE;
+    background-color: #64D0FE;
 }
