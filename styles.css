@@ -48,24 +48,35 @@ body {
     padding: .5em;
 }
 
-.header nav span a {
+.nav-button {
     color: white;
     text-decoration: none;
-    padding: .5em 1em;
-    transition: .2s;
+    position: relative;
+    padding: .2em;
 }
 
-.header nav span a:hover {
-    color: black;
+.nav-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .2em;
+    bottom: 0;
+    left: 0;
     background-color: #64D0FE;
-    border: none;
-    border-radius: .5em;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+  }
+
+.nav-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #home {
     margin-top: 20em;
-    margin-left: 10em;
     line-height: 2em;
+    text-align: center;
 }
 
 #home h1 {
@@ -88,7 +99,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     padding: .3em 1em;
-    transition: .2s;
+    transition: .5s;
 }
 
 #home a:hover {
@@ -123,8 +134,8 @@ body {
     color: white;
     text-align: left;
     font-size: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 #skills-section {
@@ -139,12 +150,6 @@ body {
 #skills-section p {
     text-align: center;
 }
-
-/* #skills-separator {
-    border-top: 3px solid white;
-    margin-left: 5em;
-    margin-right: 5em;
-} */
 
 .container {
     margin-top: 3em;
@@ -164,12 +169,18 @@ body {
     border-radius: 2em;
 }
 
+/* Makes all logos the same width */
 .box img{
     width: 5em;
     margin-top: 1em;
 }
 
-.box.smaller-logo {
+/* Makes logos that are too big smaller */
+.smaller-logo {
+    width: 4.3em !important;
+}
+
+.csharp-logo {
     width: 10em;
 }
 
@@ -197,6 +208,7 @@ body {
     width: 22em;
     height: 28em;
     margin: 0px 10px 30px 20px;
+    padding: .5em;
 }
 
 .card img {
@@ -210,9 +222,8 @@ body {
 }
 
 .project-tag {
-    color: white;
+    color:#a2a2a2;
     font-size: 1em;
-    font-weight: bold;
 }
 
 .project-description {
@@ -235,4 +246,50 @@ body {
     color: black;
     border-color: #64D0FE;
     background-color: #64D0FE;
+}
+
+#contact-section {
+    color: black;
+    background-color: #64D0FE;
+    margin-top: 5em;
+    text-align: center;
+    padding: 2em;
+}
+
+.contact-heading {
+    font-size: 3.5em;
+    /* margin-left: 150px; */
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.contact-body {
+    font-size: 1.2em;
+    /* margin-left: 150px; */
+    color: #212121;
+}
+
+.contact-links {
+    /* margin-left: 140px; */
+}
+
+.contact-links img {
+    width: 2.5em;
+    border: .1em solid black;
+    border-radius: 2em;
+    padding: .3em;
+    transition: .5s;
+    margin-bottom: 15em;
+}
+
+.contact-links span {
+    padding: .5em;
+}
+
+.contact-links img:hover {
+    background-color: white;
+}
+
+.contact-from {
+    display: block;
 }
