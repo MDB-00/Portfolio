@@ -258,19 +258,13 @@ body {
 
 .contact-heading {
     font-size: 3.5em;
-    /* margin-left: 150px; */
     margin-top: 2em;
     margin-bottom: 0;
 }
 
 .contact-body {
     font-size: 1.2em;
-    /* margin-left: 150px; */
     color: #212121;
-}
-
-.contact-links {
-    /* margin-left: 140px; */
 }
 
 .contact-links img {
