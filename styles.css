@@ -267,13 +267,25 @@ body {
     color: #212121;
 }
 
+.contact-container {
+   display: flex;
+   align-items: center;
+   width: 330px;
+   margin: 0 auto;
+}
+
+/* #email {
+    font-size: 1em;
+    font-weight: 400;
+} */
+
 .contact-links img {
     width: 2.5em;
     border: .1em solid black;
     border-radius: 2em;
     padding: .3em;
     transition: .5s;
-    margin-bottom: 15em;
+    /* margin-bottom: 15em; */
 }
 
 .contact-links span {
@@ -284,6 +296,6 @@ body {
     background-color: white;
 }
 
-.contact-from {
-    display: block;
+#bottom {
+    margin-bottom: 8em;
 }
