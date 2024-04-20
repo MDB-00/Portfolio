@@ -51,6 +51,7 @@ body {
     padding: .5em;
 }
 
+
 .nav-button {
     color: white;
     text-decoration: none;
@@ -93,24 +94,6 @@ body {
     font-size: 4em;
     font-weight: bold;
 }
-
-#home a {
-    border: .1em solid #64D0FE;
-    border-radius: 1em;
-    color: #64D0FE;
-    font-size: 1.35em;
-    font-weight: bold;
-    text-decoration: none;
-    padding: .3em 1em;
-    transition: .5s;
-}
-
-#home a:hover {
-    color: black;
-    background-color: #64D0FE;
-    border-color: white;
-}
-
 
 #about-section {
     margin-top: 15em;
