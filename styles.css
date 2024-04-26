@@ -7,7 +7,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    border: 3em solid #64D0FE;
+    border: .5em solid #64D0FE;
 }
 
 :target::before {
@@ -25,7 +25,7 @@ body {
     background-color: black;
     padding: 2em;
     height: 2em;
-    width: 88.45%;
+    width: 71.6em;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -307,7 +307,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
   }
   
   /* Track */
