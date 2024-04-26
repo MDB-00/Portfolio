@@ -1,11 +1,6 @@
 html {
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
 }
-/* *{
-    outline: .5px red dashed;;
-} */
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -21,6 +16,10 @@ body {
     height: 90px;
     margin: -90px 0 0;
 }
+
+/* .header-container {
+    display: ;   
+} */
 
 .header {
     background-color: black;
@@ -85,7 +84,7 @@ body {
 
 #home h1 {
     color: #64D0FE;
-    font-size: 8em;
+    font-size: 120px;
     -webkit-text-stroke: .02em white;
 }
 
@@ -96,12 +95,13 @@ body {
 }
 
 #about-section {
-    margin-top: 15em;
+    margin-top: 20em;
     line-height: 2.5em;
 }
 
 #about-section h2 {
     margin-top: 1.2em;
+    margin-bottom: .5em;
 }
 
 .separator {
@@ -122,12 +122,16 @@ body {
     color: white;
     text-align: left;
     font-size: 1.5em;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 4em;
+    margin-top: -3em;
+    margin-bottom: -1em;
+    display: inline-block;
+    /* margin-left: 150px;
+    margin-right: 150px; */
 }
 
 #skills-section {
-    margin-top: 15em;
+    margin-top: 10em;
     text-align: center;
 }
 
@@ -140,14 +144,15 @@ body {
 }
 
 .container {
-    margin-top: 3em;
+   margin-top: -2em;
 }
 
-.center{
+.skills-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 1em;
+    justify-content: center;
+    grid-gap: 2em;
+    flex-wrap: wrap;
+    padding: .5em;
 }
 
 .box {
@@ -160,13 +165,13 @@ body {
 
 /* Makes all logos the same width */
 .box img{
-    width: 5em;
+    width: 35%;
     margin-top: 1em;
 }
 
 /* Makes logos that are too big smaller */
 .smaller-logo {
-    width: 4.3em !important;
+    width: 33% !important;
 }
 
 .box p{
@@ -176,27 +181,43 @@ body {
 
 #projects-section {
     margin-top: 15em;
+    text-align: center;
 }
 
 #projects-section h2 {
-    margin-bottom: .2em;
+    margin-bottom: .5em;
 }
 
 #projects-section p {
     text-align: center;
 }
 
+.projects-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    grid-gap: 4em;
+    padding: 2em;
+    /* grid-template-columns: repeat(2, minmax(1px, 100%)); */
+    /* grid-template-rows: auto; */
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
 .card {
     background-color: black;
     border: 1em double #64D0FE;
     border-radius: 1.5em;
-    width: 22em;
-    height: 28em;
+    width: 20em;
+    height: 26em;
     padding: .5em;
 }
 
 .card img {
-    width: 22em;
+    width: 100%;
 }
 
 .project-heading {
@@ -298,3 +319,4 @@ body {
   ::-webkit-scrollbar-thumb {
     background: black;
   }
+
