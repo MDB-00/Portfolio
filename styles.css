@@ -143,10 +143,6 @@ body {
     text-align: center;
 }
 
-.container {
-   margin-top: -2em;
-}
-
 .skills-container {
     display: flex;
     justify-content: center;
