@@ -368,10 +368,7 @@ body {
         width: 86.5%;
         font-size: .8em;
         text-align: center;
-    }
-
-    .header nav span {
-        
+        display: none;
     }
 
     .nav-button {
@@ -379,7 +376,7 @@ body {
     }
 
     #home {
-        margin-top: 10em;
+        margin-top: 8em;
     }
 
     #about-section {
