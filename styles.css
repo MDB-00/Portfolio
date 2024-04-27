@@ -364,6 +364,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        border: .1em solid #64D0FE;
+    }
+
     .header {
         width: 86.5%;
         font-size: .8em;
