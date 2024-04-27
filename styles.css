@@ -344,6 +344,12 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .body-text {
+        padding: 2em;
+    }
+}
+
 @media screen and (max-width: 402px) {
     .contact-heading {
         font-size: 3em;
