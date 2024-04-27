@@ -316,11 +316,13 @@ body {
     background: black;
   }
 
-@media screen and (max-width: 750px) {
-    body {
-        white-space: normal;
+@media screen and (max-width: 1069px) {
+    #home h1 {
+        font-size: 6em;
     }
+}
 
+@media screen and (max-width: 750px) {
     #home h1 {
         font-size: 2.6em !important;
     }
@@ -340,5 +342,10 @@ body {
     .header {
         display: none;
     }
+}
 
+@media screen and (max-width: 402px) {
+    .contact-heading {
+        font-size: 3em;
+    }
 }
